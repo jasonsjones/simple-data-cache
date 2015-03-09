@@ -7,16 +7,38 @@
 (function () {
     'use strict';
 
+    /**
+     * Creates a new dictionary instance
+     *
+     * @constructor
+     */
     function Dictionary() {
         this._items = {};
     }
 
+    /*
+     * All member functions attached to the Dictionary prototype.  All
+     * dictionary instances will share these methods, meaning there will
+     * NOT be copies made for each instance.  This can be a potential memory
+     * savings since there can be several different dictionary instances
+     * instantiated.
+     */
     Dictionary.prototype = {
 
+        /**
+         * Returns the size, or number of items in the dictionary
+         *
+         * @returns {number} the number of items in the dictionary
+         */
         size: function () {
             return Object.keys(this._items).length;
         },
 
+        /**
+         * Determines if the dictionary is empty
+         *
+         * @ returns {boolean} true if dictionary is empty, false otherwise
+         */
         isEmpty: function () {
             return this.size() === 0;
         },
