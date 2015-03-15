@@ -8,22 +8,22 @@
     'use strict';
 
     /**
-     * Creates a new dictionary instance
+     * Creates a new simple data store instance
      *
      * @constructor
      */
-    function Dictionary() {
+    function SimpleDataStore() {
         this._items = {};
     }
 
     /*
-     * All member functions attached to the Dictionary prototype.  All
+     * All member functions attached to the SimpleDataStore prototype.  All
      * dictionary instances will share these methods, meaning there will
      * NOT be copies made for each instance.  This can be a potential memory
-     * savings since there can be several different dictionary instances
+     * savings since there can be several different data store instances
      * instantiated.
      */
-    Dictionary.prototype = {
+    SimpleDataStore.prototype = {
 
         /**
          * Returns the size, or number of items in the dictionary
@@ -90,5 +90,6 @@
         }
     };
 
-    module.exports = Dictionary;
+    module.exports = SimpleDataStore;
+
 }());

@@ -1,10 +1,10 @@
-# Dictionary Data Structure
+# Simple Data Store
 
 ## Description
 
 This is a javascript implementation of a
 [dictionary](http://en.wikipedia.org/wiki/Associative_array)
-data structure.
+data structure that represents a very simple, but effective, data store.
 
 *For specific examples and documentation, see the below sections*
 
@@ -25,7 +25,7 @@ Install with npm :
 
 ```bash
 # work in progress; not yet published to npm
-npm install dictionary-ds --save
+npm install simple-data-store --save
 ```
 Basic usage example below.  _Note: it does not cover all the available
 methods, rather just highlights the main functionality to get up and running
@@ -34,7 +34,7 @@ API section._
 
 ## API
 
-**Available methods for a Dictionary instance:**
+**Available methods for a Simple Data Store instance:**
 
 ----
 ## License
