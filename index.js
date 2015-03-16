@@ -1,5 +1,6 @@
 /**
- * @fileOverview Implementation of a dictionary data structure
+ * @fileOverview Implementation of a dictionary data structure, or simple
+ *               data cache
  * @author Jason S. Jones
  * @version 0.1.0
  * @license MIT
@@ -8,22 +9,22 @@
     'use strict';
 
     /**
-     * Creates a new simple data store instance
+     * Creates a new simple data cache instance
      *
      * @constructor
      */
-    function SimpleDataStore() {
+    function SimpleDataCache() {
         this._items = {};
     }
 
     /*
-     * All member functions attached to the SimpleDataStore prototype.  All
+     * All member functions attached to the SimpleDataCache prototype.  All
      * dictionary instances will share these methods, meaning there will
      * NOT be copies made for each instance.  This can be a potential memory
-     * savings since there can be several different data store instances
+     * savings since there can be several different data cache instances
      * instantiated.
      */
-    SimpleDataStore.prototype = {
+    SimpleDataCache.prototype = {
 
         /**
          * Returns the size, or number of items in the dictionary
@@ -44,21 +45,21 @@
         },
 
         /**
-         * Adds the key/value pair to the data store
+         * Adds the key/value pair to the data cache
          *
-         * @ params {string} key the key to store in the data store
-         * @ params {number|string|object} value the value to associate with
-         *          the key in the data store
+         * @ param {string} key the key to store in the data cache
+         * @ param {number|string|object} value the value to associate with
+         *          the key in the data cache
          */
         set: function (key, value) {
             this._items[key] = value;
         },
 
         /**
-         * Determines if the data store contains the key
+         * Determines if the data cache contains the key
          *
-         * @params {string} key the key to find in the data store
-         * @returns {boolean} true if the key is in the data store, false
+         * @param {string} key the key to find in the data cache
+         * @returns {boolean} true if the key is in the data cache, false
          *          otherwise
          */
         has: function (key) {
@@ -66,9 +67,9 @@
         },
 
         /**
-         * Removes the item with the matching key from the data store
+         * Removes the item with the matching key from the data cache
          *
-         * @params {string} key the key of the item to remove from the data store
+         * @param {string} key the key of the item to remove from the data cache
          * @returns {boolean} true if the item with the key wsa removed, false
          *          otherwise
          */
@@ -81,12 +82,12 @@
         },
 
         /**
-         * Returns the item with the matching key from the data store
+         * Returns the item with the matching key from the data cache
          *
-         * @params {string} key the key of the item to return from the data store
+         * @param {string} key the key of the item to return from the data cache
          * @returns {string|number|object} the value of the item from the data
                     store with the matching key if it is contained in the data
-                    store.  If it is not in the data store, return -1.
+                    store.  If it is not in the data cache, return -1.
          */
         get: function (key) {
             if (this.has(key)) {
@@ -97,20 +98,20 @@
         },
 
         /**
-         * Returns an array of all the keys stored in the data store
+         * Returns an array of all the keys stored in the data cache
          *
          * @returns {object} an array containing all the keys stored in the
-                    data store
+                    data cache
          */
         keys: function () {
             return Object.keys(this._items);
         },
 
         /**
-         * Returns an array of all the values stored in the data store
+         * Returns an array of all the values stored in the data cache
          *
          * @returns {object} an array containing all the values stored in the
-                    data store
+                    data cache
          */
         values: function () {
             var values = [];
@@ -123,23 +124,23 @@
         },
 
         /**
-         * Returns all the key/value pairs stored in the data store
+         * Returns all the key/value pairs stored in the data cache
          *
-         * @returns {object} all key/value pairs stored in the data store
+         * @returns {object} all key/value pairs stored in the data cache
          */
         getItems: function () {
             return this._items;
         },
 
         /**
-         * Clears the data store of all key/value pairs
+         * Clears the data cache of all key/value pairs
          */
         clear: function () {
             this._items = {};
         }
     };
 
-    // Expose SimpleDataStore
-    module.exports = SimpleDataStore;
+    // Expose SimpleDataCache
+    module.exports = SimpleDataCache;
 
 }());

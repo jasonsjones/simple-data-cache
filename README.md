@@ -1,10 +1,10 @@
-# Simple Data Store
+# Simple Data Cache
 
 ## Description
 
 This is a javascript implementation of a
 [dictionary](http://en.wikipedia.org/wiki/Associative_array)
-data structure that represents a very simple, but effective, data store.
+data structure that represents a very simple, but effective, data cache.
 
 *For specific examples and documentation, see the below sections*
 
@@ -25,7 +25,7 @@ Install with npm :
 
 ```bash
 # work in progress; not yet published to npm
-npm install simple-data-store --save
+npm install simple-data-cache --save
 ```
 Basic usage example below.  _Note: it does not cover all the available
 methods, rather just highlights the main functionality to get up and running

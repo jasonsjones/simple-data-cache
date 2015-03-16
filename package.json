@@ -1,5 +1,5 @@
 {
-  "name": "dictionary-ds",
+  "name": "simple-data-cache",
   "version": "0.1.0",
   "description": "JavaScript implementation of a dictionary data structure",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jasonsjones/dictionary-data-structure.git"
+    "url": "https://github.com/jasonsjones/simple-data-cache.git"
   },
   "keywords": [
     "dictionary",
@@ -20,9 +20,9 @@
   "author": "Jason Jones",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jasonsjones/dictionary-data-structure/issues"
+    "url": "https://github.com/jasonsjones/simple-data-cache/issues"
   },
-  "homepage": "https://github.com/jasonsjones/dictionary-data-structure",
+  "homepage": "https://github.com/jasonsjones/simple-data-cache",
   "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-jscs": "^1.4.0",
