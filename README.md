@@ -32,9 +32,43 @@ methods, rather just highlights the main functionality to get up and running
 with this data structure. For a description of all the methods, see the
 API section._
 
+```javascript
+var SimpleDataCache = require('simple-data-cache');
+var sdc = new SimpleDataCache();
+
+sdc.isEmpty();
+// --> true
+
+sdc.set('key1', 'value1');
+sdc.set('key2', 'value2');
+sdc.set('key3', 'value3');
+
+sdc.size();
+// --> 3
+sdc.isEmpty();
+// --> false
+
+sdc.has('key2');
+// --> true
+sdc.has('key4');
+// --> false
+
+sdc.get('key3');
+// ==> 'value3'
+
+sdc.keys();
+// --> ['key1', 'key2', 'key3']
+sdc.values();
+// --> ['value1', 'value2', 'value3']
+
+sdc.clear();
+sdc.isEmpty();
+// --> true
+```
+
 ## API
 
-**Available methods for a Simple Data Store instance:**
+**Available methods for a Simple Data Cache instance:**
 
 ----
 ## License
