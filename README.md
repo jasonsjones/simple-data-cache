@@ -12,7 +12,7 @@ This implementation does not store data to any database or to localStorage;
 therefore, the data stored in the data cache, or dictionary, will not persist
 between instances unless additional custom code is written to provide that
 functionality. This implemention is simply an in-memory data store used to
-store key/value pairs.  Nonetheless, this simple data cache can be very useful.
+store key/value pairs.  Nevertheless, this simple data cache can be very useful.
 
 *For specific examples and documentation, see the below sections*
 
