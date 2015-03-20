@@ -27,18 +27,18 @@
     SimpleDataCache.prototype = {
 
         /**
-         * Returns the size, or number of items in the dictionary
+         * Returns the size, or number of items in the data cache
          *
-         * @returns {number} the number of items in the dictionary
+         * @returns {number} the number of items in the data cache
          */
         size: function () {
             return Object.keys(this._items).length;
         },
 
         /**
-         * Determines if the dictionary is empty
+         * Determines if the data cache is empty
          *
-         * @returns {boolean} true if dictionary is empty, false otherwise
+         * @returns {boolean} true if data cache is empty, false otherwise
          */
         isEmpty: function () {
             return this.size() === 0;
