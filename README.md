@@ -8,7 +8,7 @@ This is a javascript implementation of a
 [dictionary](http://en.wikipedia.org/wiki/Associative_array)
 data structure that represents a very simple, but effective, data cache.
 
-This implementation does not store data to any database or to localStorage;
+This implementation does not store any data to a database or localStorage;
 therefore, the data stored in the data cache, or dictionary, will not persist
 between instances unless additional custom code is written to provide that
 functionality. This implemention is simply an in-memory data store used to
@@ -32,10 +32,9 @@ this implementation in any other context/environment; only tested with node.js_
 Install with npm :
 
 ```bash
-# work in progress; not yet published to npm
 npm install simple-data-cache --save
 ```
-Basic usage example below.  _Note: it does not cover all the available
+Basic usage example below.  _Note: it may not cover all the available
 methods, rather just highlights the main functionality to get up and running
 with this data structure. For a description of all the methods, see the
 API section._
