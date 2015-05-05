@@ -47,8 +47,8 @@
         /**
          * Adds the key/value pair to the data cache
          *
-         * @ param {string} key the key to store in the data cache
-         * @ param {number|string|object} value the value to associate with
+         * @param {string} key the key to store in the data cache
+         * @param {number|string|object} value the value to associate with
          *          the key in the data cache
          */
         set: function (key, value) {
