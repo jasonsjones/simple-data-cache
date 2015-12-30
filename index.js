@@ -2,7 +2,6 @@
  * @fileOverview Implementation of a dictionary data structure, or simple
  *               data cache
  * @author Jason S. Jones
- * @version 0.1.0
  * @license MIT
  */
 (function () {
