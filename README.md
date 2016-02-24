@@ -1,17 +1,17 @@
-# [![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![dependency status][dm-image]][dm-url]
+# [![npm version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![dependency status][dm-image]][dm-url] [![devDependency status][devdep-image]][devdep-url]
 
 # Simple Data Cache
 
 ## Description
 
-This is a javascript implementation of a
+This is a JavaScript implementation of a
 [dictionary](http://en.wikipedia.org/wiki/Associative_array)
 data structure that represents a very simple, but effective, data cache.
 
 This implementation does not store any data to a database or localStorage;
 therefore, the data stored in the data cache, or dictionary, will not persist
 between instances unless additional custom code is written to provide that
-functionality. This implemention is simply an in-memory data store used to
+functionality. This implementation is simply an in-memory data store used to
 store key/value pairs.  Nevertheless, this simple data cache can be very useful.
 
 *For specific examples and documentation, see the below sections*
@@ -118,3 +118,5 @@ MIT &copy; Jason Jones
 [travis-url]:https://travis-ci.org/jasonsjones/simple-data-cache
 [dm-image]:https://david-dm.org/jasonsjones/simple-data-cache.svg
 [dm-url]:https://david-dm.org/jasonsjones/simple-data-cache
+[devdep-image]:https://david-dm.org/jasonsjones/simple-data-cache/dev-status.svg
+[devdep-url]:https://david-dm.org/jasonsjones/simple-data-cache#info=devDependencies
